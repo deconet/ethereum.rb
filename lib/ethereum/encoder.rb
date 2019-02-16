@@ -91,12 +91,7 @@ module Ethereum
       @tail = ""
       @inputs = inputs
       inputs.each.with_index do |input, index|
-        to_encode = args[index]
-        if (input.type == 'bytes' && to_encode.start_with?("0x"))
-          # convert to actual ruby bytes from hex string
-          to_encode = [to_encode[2..-1]].pack('H*')
-        end
-        encoded = encode(input.type, to_encode)
+        encoded = encode(input.type, args[index])
         if encoded.is_a? Array
           @head << encoded[0]
           @tail << encoded[1]
