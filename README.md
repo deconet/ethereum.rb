@@ -1,6 +1,12 @@
 # Ethereum Ruby library - Ethereum.rb
 
-[![Build Status](https://travis-ci.org/EthWorks/ethereum.rb.svg?branch=master)](https://travis-ci.org/EthWorks/ethereum.rb) [![security](https://hakiri.io/github/NullVoxPopuli/MetaHash/master.svg)](https://hakiri.io/github/NullVoxPopuli/MetaHash/master) [![Dependency Status](https://gemnasium.com/marekkirejczyk/ethereum.rb.svg)](https://gemnasium.com/marekkirejczyk/ethereum.rb) [![Code Climate](https://codeclimate.com/github/marekkirejczyk/ethereum.rb/badges/gpa.svg)](https://codeclimate.com/github/marekkirejczyk/ethereum.rb)
+This gem is abandoned by it's original creator.  I depend on it for production use at [Deco.Network](https://deco.network), so I will maintain it here.
+
+I've already fixed a number of bugs, so feel free to use this yourself, or submit PRs if you find a bug.
+
+The original README is below.
+
+-----------------------------------
 
 The goal of ethereum.rb is to make interacting with ethereum blockchain from ruby as fast and easy as possible (but not easier!).
 
@@ -121,7 +127,7 @@ Functions defined in a contract are exposed using the following conventions:
 
 ```
 contract.transact.[function_name](params)
-contract.transact_and_wait.[function_name](params)  
+contract.transact_and_wait.[function_name](params)
 contract.call.[function_name](params)
 ```
 
